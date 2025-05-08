@@ -44,11 +44,13 @@
   --shadow-shadow: var(--shadow);
   --font-weight-base: 500;
   --font-weight-heading: 800;
-
+/* 
+  [linear-gradient(to_right,#8080804D_1px,transparent_1px),linear-gradient(to_bottom,#80808090_1px,transparent_1px)] */
   --background-grid:
-    linear-gradient(to right, oklch(53.23% 0 0 / 0.302) 1px, transparent 1px), /* Equivalent to #8080804D */
-    linear-gradient(to bottom, oklch(53.23% 0 0 / 0.565) 1px, transparent 1px) /* Equivalent to #80808090 */
-    0 0 / 40px 40px /* position / size */
+    linear-gradient(to right, oklch(53.23% 0 0 / 0.565) 1px, transparent 1px)
+    0 0 / 40px 40px,
+    linear-gradient(to bottom, oklch(53.23% 0 0 / 0.565) 1px, transparent 1px)
+    0 0 / 40px 40px,
     var(--color-background); /* background-color */
   
 
