@@ -47,10 +47,10 @@
 /* 
   [linear-gradient(to_right,#8080804D_1px,transparent_1px),linear-gradient(to_bottom,#80808090_1px,transparent_1px)] */
   --background-grid:
-    linear-gradient(to right, oklch(53.23% 0 0 / 0.565) 1px, transparent 1px)
-    0 0 / 40px 40px,
-    linear-gradient(to bottom, oklch(53.23% 0 0 / 0.565) 1px, transparent 1px)
-    0 0 / 40px 40px,
+    linear-gradient(to right, var(--color-main) 1px, transparent 1px)
+    0 0 / 64px 64px,
+    linear-gradient(to bottom, var(--color-main) 1px, transparent 1px)
+    0 0 / 64px 64px,
     var(--color-background); /* background-color */
   
 
