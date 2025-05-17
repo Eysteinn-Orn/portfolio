@@ -14,28 +14,31 @@ const libraries = [
   "Next.js",
   "Tailwind CSS",
   "TypeScript",
-  "shadcn/ui",
-  "Drizzle ORM",
+  "Power Platform",
+  "Azure",
+  "C#",
+  "PostgreSQL",
 ];
 
 export default function AboutPage() {
   return (
-    <main className="flex min-h-screen flex-col items-center p-8 md:p-16 lg:p-24">
+    <main className="my-6 flex flex-col container mx-auto px-2rem md:w-[1100px]">
       <Hero
         name="Eysteinn Örn Jónsson"
-        jobTitle="Software Engineer"
-        description="A brief description about yourself." // Replace with actual description
+        jobTitle="Tölvunarfræðingur"
+        description="Ástríðan mín felst í vefþróun, leikjahönnun og stafrænum lausnum. Ég nýt þess að vinna með nýjustu tækni til að búa til notendavænar lausnir."
         githubUrl="https://github.com/eysteinn-orn"
-        blueskyUrl="https://bsky.app/profile/yourusername.bsky.social" // Replace with your Bluesky URL
+        blueskyUrl="https://bsky.app/profile/eysteinn.bsky.social" // Replace with your Bluesky URL
         imageUrl="/notion-face.png"
       />
-      <Marquee items={libraries} />
-      <div className="mt-12 w-full max-w-4xl px-4 md:mt-16">
-        <Card className="w-full">
+      <div className="space-y-6 container mx-auto px-2rem">
+        <Marquee
+          items={libraries}
+        ></Marquee>
+        <Card>
           <CardHeader>
             <CardTitle
               className="text-3xl font-heading text-foreground sm:text-4xl md:text-5xl"
-              style={{ textShadow: `2px 2px 0px var(--border)` }}
             >
               About Me
             </CardTitle>

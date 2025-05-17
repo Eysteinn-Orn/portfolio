@@ -4,7 +4,7 @@ import { Send } from "lucide-react";
 
 export default function Navbar() {
   return (
-    <div className="z-20 flex justify-between gap-5 py-8 bg-background-grid px-8 shadow-shadow rounded-base backdrop-blur-sm sticky top-0">
+    <div className="z-20 flex justify-between gap-5 py-8 mb-12 bg-background-grid px-8 shadow-shadow rounded-base backdrop-blur-sm sticky top-0">
       <a href="mailto:eysi@live.com">
         <Button 
             className="cursor-pointer inline-flex items-center text-primary justify-center whitespace-nowrap rounded-base text-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 px-4 py-2"
