@@ -26,9 +26,9 @@ export default function AboutPage() {
       <Hero
         name="Eysteinn Örn Jónsson"
         jobTitle="Tölvunarfræðingur"
-        description="Ástríðan mín felst í vefþróun, leikjahönnun og stafrænum lausnum. Ég nýt þess að vinna með nýjustu tækni til að búa til notendavænar lausnir."
+        description="Ástríðan mín felst í vefþróun, leikjahönnun og stafrænum lausnum. Ég nýt þess að vinna með öðrum og læra á nýjustu tækni til að búa til notendavænar lausnir."
         githubUrl="https://github.com/eysteinn-orn"
-        blueskyUrl="https://bsky.app/profile/eysteinn.bsky.social" // Replace with your Bluesky URL
+        blueskyUrl="https://bsky.app/profile/eysteinn.bsky.social"
         imageUrl="/notion-face.png"
       />
       <div className="space-y-6 container mx-auto px-2rem">
