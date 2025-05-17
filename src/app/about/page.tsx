@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/card";
 
 const libraries = [
+  "Git",
   "React",
   "Next.js",
   "Tailwind CSS",
@@ -18,6 +19,7 @@ const libraries = [
   "Azure",
   "C#",
   "PostgreSQL",
+  "Godot",
 ];
 
 export default function AboutPage() {

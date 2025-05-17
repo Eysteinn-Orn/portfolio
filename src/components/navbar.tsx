@@ -15,19 +15,20 @@ export default function Navbar() {
       </a>
       
         <nav className="flex items-center justify-end gap-8">
-        
-            <Link href="/about" className="text-lg font-semibold text-foreground/90 hover:text-main transition-colors duration-150 ease-in-out">
-            Um mig
-            </Link>
 
-            <Link href="/projects" className="text-lg font-semibold text-foreground/90 hover:text-main transition-colors duration-150 ease-in-out">
-            Verkefni
-            </Link>
+            <div className="p-2 px-4 flex items-center gap-8 bg-secondary-background text-foreground border-2 border-border rounded-base">
+              <Link href="/about" className="text-foreground/90 hover:text-main transition-colors duration-150 ease-in-out">
+              Um mig
+              </Link>
 
-            <Link href="/experience" className="text-lg font-semibold text-foreground/90 hover:text-main transition-colors duration-150 ease-in-out">
-            Reynsla
-            </Link>
+              <Link href="/projects" className="text-foreground/90 hover:text-main transition-colors duration-150 ease-in-out">
+              Verkefni
+              </Link>
 
+              <Link href="/experience" className="text-foreground/90 hover:text-main transition-colors duration-150 ease-in-out">
+              Reynsla
+              </Link>
+            </div>
             <Button variant="neutral">
                 <a href="/resume-eysteinn.pdf" download>
                     Ferilskrá
