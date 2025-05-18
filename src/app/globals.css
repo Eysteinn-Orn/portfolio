@@ -44,37 +44,77 @@
   --shadow-shadow: var(--shadow);
   --font-weight-base: 500;
   --font-weight-heading: 800;
-/* 
+  /* 
   [linear-gradient(to_right,#8080804D_1px,transparent_1px),linear-gradient(to_bottom,#80808090_1px,transparent_1px)] */
-  --background-grid:
-    linear-gradient(to right, var(--color-main) 1px, transparent 1px)
-    0 0 / 64px 64px,
-    linear-gradient(to bottom, var(--color-main) 1px, transparent 1px)
-    0 0 / 64px 64px,
+  --background-grid: linear-gradient(
+        to right,
+        var(--color-main) 1px,
+        transparent 1px
+      )
+      0 0 / 64px 64px,
+    linear-gradient(to bottom, var(--color-main) 1px, transparent 1px) 0 0 /
+      64px 64px,
     var(--color-background); /* background-color */
-  
 
-  --animate-marquee: marquee 14s linear infinite;
+  --animate-marquee: marquee 25s linear infinite;
+  --animate-marquee-alt: marquee-alt 25s linear infinite;
   --animate-marquee2: marquee2 14s linear infinite;
 
-
+  --animate-fade-in: fade-in 0.5s ease-in-out forwards;
+  --animate-fade-out: fade-out 0.5s ease-in-out forwards; /* Added for fade-out */
 
 
   @keyframes marquee {
     0% {
       transform: translateX(0%);
     }
+
     100% {
       transform: translateX(-100%);
     }
   }
 
-  @keyframes marquee2 {
+  @keyframes marquee-alt {
     0% {
       transform: translateX(100%);
     }
+
     100% {
       transform: translateX(0%);
+    }
+  }
+
+  @keyframes marquee2 {
+    0% {
+      transform: translateX(0%);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  /* Added for fade-in */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(-10px); /* Optional: slight upward movement */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Added for fade-out */
+  @keyframes fade-out {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-10px); /* Optional: slight upward movement */
     }
   }
 
@@ -83,6 +123,12 @@
 @layer utilities {
   .bg-background-grid {
     background: var(--background-grid);
+  }
+  .animate-fade-in { /* Added for fade-in */
+    animation: var(--animate-fade-in);
+  }
+  .animate-fade-out { /* Added for fade-out */
+    animation: var(--animate-fade-out);
   }
 }
 
@@ -94,4 +140,3 @@
     @apply bg-background text-foreground;
   }
 } */
-

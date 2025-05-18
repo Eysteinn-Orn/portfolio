@@ -1,13 +1,11 @@
 import Hero from "@/components/hero";
-import Marquee from "@/components/ui/marquee";
 import {
   Card,
   CardContent,
-  CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import TogglableMarquee from "@/components/ui/togglable-marquee"; // Import the new component
 
 const libraries = [
   "Git",
@@ -34,37 +32,41 @@ export default function AboutPage() {
         imageUrl="/notion-face.png"
       />
       <div className="space-y-6 container mx-auto px-2rem">
-        <Marquee
-          items={libraries}
-        ></Marquee>
         <Card>
           <CardHeader>
             <CardTitle
-              className="text-3xl font-heading text-foreground sm:text-4xl md:text-5xl"
+              className="text font-heading text-foreground sm:text-4xl md:text-3xl"
             >
-              About Me
+              Aðeins um mig
             </CardTitle>
-            <CardDescription className="text-foreground/80 pt-2">
-              A little more about my journey and interests.
-            </CardDescription>
           </CardHeader>
           <CardContent>
             <p className="text-foreground">
-              Hello! I&apos;m Eysteinn, a software engineer passionate about
-              building modern web applications. I enjoy working with
-              technologies like React, Next.js, and TypeScript to create
-              engaging user experiences. When I&apos;m not coding, I enjoy
-              exploring new technologies and contributing to open-source
-              projects.
+
+              Ég er forritari með brennandi áhuga á vefþróun, leikjahönnun og stafrænum lausnum. Ég er endalaust að hugsa um hvernig ég get nýtt mína tæknikunnáttu til að búa til notendavænar lausnir sem gera líf fólks auðveldara og skemmtilegra.
+
+              <br />
+              <br />
+              
+              Eins og stendur er ég að starfa sem forritari hjá CPS Ráðgjöf að smíða Travel Agent vöruna, bakenda kerfi fyrir ferðaskrifstofur.
+              Þar stuðla ég að þróa og hanna API endapunkta, halda utanum hýsingum á Azure og laga villur sem koma upp.
+
+              <br />
+              <br />
+
+              Áður fékk ég tækifæri til að vinna rannsóknarverkefni hjá Mál- og raddtæknistofu Háskóla Reykjavíkur þar sem ég tók þátt í að þjálfa gervigreind til að svara spurningum á íslensku. 
+              Svo var lokaverkefnið mitt um viðhorfsgreiningu á íslenskum ummælum með gervigreind, þar sem við þróuðum forrit sem greindi viðhorf fólks út frá texta í ummælunum.
+
+              <br />
+              <br />
+
+              Fyrir utan vinnu er ég venjulega að labba með hundinn, spila tölvuleiki, lesa, elda, mæta í ræktina eða skipuleggja næsta Drekar og Dýfflissu hittinginn. Einnig nýt ég þess að læra á nýja tækni eða vinna í einhverju verkefni sem tengist vefforritun eða leikjahönnun.
             </p>
             {/* You can add more detailed paragraphs, lists, or other content here */}
           </CardContent>
-          <CardFooter>
-            <p className="text-sm text-foreground/70">
-              Feel free to connect or check out my projects!
-            </p>
-          </CardFooter>
         </Card>
+
+        <TogglableMarquee items={libraries} title="Tæknikunnátta" />
       </div>
     </main>
   );
