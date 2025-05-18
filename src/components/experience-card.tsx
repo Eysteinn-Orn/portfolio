@@ -28,8 +28,8 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
 }) => {
   return (
     <Card className="py-5 border-b-0 shadow-none border-2 border-color-border hover:border-color-main transition-colors duration-300 ease-in-out">
-      <CardHeader className="pb-2 px-4 md:px-6">
-        <div className="flex flex-col gap-1 md:flex-row md:items-center md:justify-between">
+      <CardHeader className="px-4 md:px-6">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between">
           {link ? (
             <a
               href={link}
@@ -52,8 +52,8 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
           </div>
         </div>
       </CardHeader>
-      <CardContent className="pt-2 px-4 md:px-6">
-        <ul className="space-y-2 list-disc pl-5">
+      <CardContent className="px-4 md:px-6">
+        <ul className="list-disc pl-5">
           {responsibility.map((item, index) => (
             <li key={index} className="text-sm text-color-foreground/75">
               {item}

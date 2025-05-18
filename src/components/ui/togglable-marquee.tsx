@@ -40,7 +40,7 @@ export default function TogglableMarquee({ items, title }: TogglableMarqueeProps
   return (
     <div>
       <div className="flex justify-between items-center mb-4">
-        <Button variant="neutral" onClick={handleClick}>
+        <Button className="cursor-pointer" variant="neutral" onClick={handleClick}>
             {/* Simplified button text */}
             <h3 className="text-xl text-foreground">{title}</h3>
         </Button>
