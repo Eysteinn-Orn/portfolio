@@ -46,7 +46,7 @@ export function ProjectCard({ category, title, description, techstacks, link, ic
       <CardFooter>
         <Button asChild className="w-full hover:bg-main/90 text-main-foreground">
           <Link href={link} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
-            View Project
+            Skoða
             {Icon && <Icon className="ml-2 h-4 w-4" />}
           </Link>
         </Button>

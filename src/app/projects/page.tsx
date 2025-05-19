@@ -3,10 +3,10 @@ import { ExternalLink } from 'lucide-react'; // Example icon
 
 const projectsData: ProjectCardProps[] = [
   {
-    category: "Web Development",
-    title: "Portfolio Website",
+    category: "Vefþróun",
+    title: "Heimasíðan mín",
     description:
-      "This very website, built with Next.js, TypeScript, and Tailwind CSS. Showcasing my skills and projects.",
+      "Þessi vefsíða, byggð með Next.js, TypeScript, Tailwind CSS og shadcn/ui. Hönnuð til að sýna verkefni mín og reynslu.",
     techstacks: [
       "Next.js",
       "TypeScript",
@@ -14,48 +14,35 @@ const projectsData: ProjectCardProps[] = [
       "shadcn/ui",
       "Vercel",
     ],
-    link: "https://github.com/yourusername/portfolio", // Replace with your actual link
-    // imageUrl: "/file.svg", // Example image, replace or remove
-    icon: ExternalLink, // Added icon
+    link: "https://github.com/eysteinn-orn/portfolio", // Gakktu úr skugga um að þetta sé rétt geymsluslóð
+    icon: ExternalLink,
   },
   {
-    category: "Mobile App",
-    title: "Task Manager App",
+    category: "Vefþróun",
+    title: "Kynningarbréf.is (Í vinnslu)",
     description:
-      "A concept for a sleek and intuitive task management application for iOS and Android.",
-    techstacks: ["React Native", "Firebase", "TypeScript"],
-    link: "#", // Placeholder link
-    // imageUrl: "/path/to/your/image2.jpg", // Optional image
-    icon: ExternalLink, // Added icon
+      "Vefverkefni sem nýtir ChatGPT til að aðstoða notendur við gerð kynningarbréfa á íslensku. Byggt með OpenAI SDK.",
+    techstacks: ["Next.js", "TypeScript", "Tailwind CSS", "OpenAI SDK", "ChatGPT", "Vercel"],
+    link: "https://kynningarbref.is",
+    icon: ExternalLink,
   },
   {
-    category: "Data Science",
-    title: "Customer Churn Prediction",
+    category: "Gervigreind",
+    title: "Lokaverkefni: Viðhorfsgreining íslenskra kvikmyndaummæla",
     description:
-      "A machine learning model to predict customer churn based on historical data.",
-    techstacks: ["Python", "scikit-learn", "Pandas", "Jupyter"],
-    link: "#",
-    // imageUrl: "/globe.svg",
-    icon: ExternalLink, // Added icon
+      "Lokaverkefni í BSc námi þar sem þróað var breytilíkan (transformer model) til að greina viðhorf í íslenskum kvikmyndaummælum. Verkfæri: PyTorch og Hugging Face.",
+    techstacks: ["Python", "PyTorch", "Hugging Face", "Scikit-learn", "Pandas"],
+    link: "https://skemman.is/handle/1946/46224",
+    icon: ExternalLink,
   },
   {
-    category: "UI/UX Design",
-    title: "E-commerce Redesign",
+    category: "Leikjaþróun",
+    title: "Spacetime Pong",
     description:
-      "A complete redesign of an e-commerce platform focusing on user experience and modern aesthetics.",
-    techstacks: ["Figma", "Adobe XD", "User Research"],
-    link: "#",
-    icon: ExternalLink, // Added icon
-  },
-  {
-    category: "Open Source",
-    title: "Utility Library",
-    description:
-      "A small utility library for common JavaScript tasks, published on npm.",
-    techstacks: ["JavaScript", "Jest", "npm"],
-    link: "#",
-    // imageUrl: "/window.svg",
-    icon: ExternalLink, // Added icon
+      "Verkefni til að kanna SpacetimeDB fyrir rauntíma fjölspilunarleiki, útfært sem Pong leikur.",
+    techstacks: ["SpacetimeDB", "TypeScript"], // Eða annað tungumál ef við á
+    link: "#", // Uppfærðu með viðeigandi hlekk ef hann er til
+    icon: ExternalLink,
   },
 ];
 

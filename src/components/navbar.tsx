@@ -16,7 +16,7 @@ export default function Navbar() {
       
         <nav className="flex items-center justify-end gap-8">
 
-            <div className="text-nowrap p-2 px-4 flex items-center gap-8 bg-secondary-background text-foreground border-2 border-border rounded-base">
+            <div className="font-semibold text-nowrap text-sm h-10 px-4 py-2 flex items-center gap-8 bg-secondary-background text-foreground border-2 shadow-shadow border-border rounded-base">
               <Link href="/about" className="text-foreground/90 hover:text-main transition-colors duration-150 ease-in-out">
               Um mig
               </Link>
@@ -29,7 +29,7 @@ export default function Navbar() {
               Reynsla
               </Link>
             </div>
-            <Button variant="neutral">
+            <Button className="cursor-pointer" variant="neutral">
                 <a href="/resume-eysteinn.pdf" download>
                     Ferilskrá
                 </a>
