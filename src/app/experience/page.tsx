@@ -2,8 +2,8 @@ import ExperienceCard from "@/components/experience-card";
 
 const experiences = [
   {
-    role: "Forritari",
-    company: "CPS ehf.",
+    role: "Forritari (hlutastarf)",
+    company: "Acuo",
     link: "https://acuo.is/",
     year: "2024 - núverandi",
     responsibility: [
@@ -11,8 +11,7 @@ const experiences = [
       "Forritun í C# og TypeScript",
       "React, Next.js, Tailwind CSS",
       "Microsoft Power Apps, Power Automate og Power BI",
-      "Aðstoðað við verkefni í Microsoft Power App, eins og að gera utanaðkomandi skráningar aðgang með vefform sem hýstar verða á Azure þjónustum.",
-      "Lært að forrita með React og Next.js í TypeScript.",
+      "Aðstoðað við verkefni í Microsoft Power App, eins og að gera utanaðkomandi skráningar með vefformi sem er hýst á Azure."
     ],
     techstacks: [
       "C#",
