@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Send } from "lucide-react";
 
+// TODO@Eysteinn-Orn: Fix the navbar on mobile devices
 export default function Navbar() {
   return (
     <div className="z-20 flex justify-between gap-5 py-8 mb-12 bg-background-grid px-8 shadow-shadow rounded-base backdrop-blur-sm sticky top-0">
