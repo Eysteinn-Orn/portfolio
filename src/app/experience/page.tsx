@@ -67,8 +67,8 @@ const experiences = [
 export default function ExperiencePage() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-start bg-color-background">
-      <div className="w-full p-4 md:w-3/4 lg:w-2/3">
-        <h1 className="mb-12 text-4xl font-bold text-left text-color-foreground">
+      <div className="w-full p-2 md:w-3/4 lg:w-2/3">
+        <h1 className="mb-12 text-4xl font-heading text-left text-color-foreground">
           Reynslan mín 
         </h1>
         <div className="space-y-8">
