@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${publicSans.variable} antialiased`} // Update className to use publicSans
+        className={`${publicSans.variable} antialiased bg-background`} // Update className to use publicSans
       >
         <Navbar />
         {children}

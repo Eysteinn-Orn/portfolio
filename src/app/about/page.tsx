@@ -32,7 +32,7 @@ export default function AboutPage() {
         imageUrl="/notion-face.png"
       />
       <div className="space-y-6 container mx-auto px-2rem">
-        <Card>
+        <Card className="bg-secondary-background text-foreground">
           <CardHeader>
             <CardTitle
               className="text font-heading text-foreground sm:text-4xl md:text-3xl"
